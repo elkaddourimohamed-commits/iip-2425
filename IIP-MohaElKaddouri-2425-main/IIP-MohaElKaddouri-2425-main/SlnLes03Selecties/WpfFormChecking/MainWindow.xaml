@@ -1,0 +1,53 @@
+﻿<Window x:Class="WpfFormChecking.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfFormChecking"
+        mc:Ignorable="d"
+        Title="WpfForm" Height="450" Width="800">
+    <Grid>
+        <TextBlock Text="REGISTRATIEFORMULIER" HorizontalAlignment="Left" Margin="15,10,0,0" VerticalAlignment="Top" FontSize="16" />
+        <Label Content="Naam:" Margin="15,50,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBox x:Name="txtNaam" Margin="185,50,0,0" Padding="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" />
+        <TextBlock x:Name="lblMessageName" Margin="515,50,0,0" Padding="5" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFBC2B2B" />
+
+        <Label Content="Email:" Margin="15,85,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBox x:Name="txtEmail" Margin="185,85,0,0" Padding="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" />
+        <TextBlock x:Name="lblMessageEmail" Margin="515,85,0,0" Padding="5" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFBC2B2B" />
+
+        <Label Content="Geboortedatum:" Margin="15,125,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <DatePicker x:Name="dtpGeboortedatum" HorizontalAlignment="Left" Margin="185,125,0,0" Padding="5" VerticalAlignment="Top" />
+        <TextBlock x:Name="lblMessageGeboortedatum" Margin="515,125,0,0" Padding="5" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFBC2B2B" />
+
+        <Label Content="Profiel:" Margin="15,160,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <ComboBox x:Name="cmbProfiel" Margin="185,160,0,0" Padding="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="selecteer..." IsSelected="True" />
+            <ComboBoxItem Content="beginner" />
+            <ComboBoxItem Content="gemiddeld" />
+            <ComboBoxItem Content="gevorderd" />
+        </ComboBox>
+        <TextBlock x:Name="lblMessageProfiel" Margin="515,160,0,0" Padding="5" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFBC2B2B" />
+
+        <Label Content="Paswoord:" Margin="15,195,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <PasswordBox x:Name="pwdPaswoord" Margin="185,195,0,0" Padding="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" />
+        <TextBlock x:Name="lblMessagePaswoord" Margin="515,195,0,0" Padding="5" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFBC2B2B" />
+
+        <Label Content="Geslacht:" Margin="15,225,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <RadioButton x:Name="rbnMan" Content="man" HorizontalAlignment="Left" Margin="185,235,0,0" VerticalAlignment="Top" />
+        <RadioButton x:Name="rbnVrouw" Content="vrouw" HorizontalAlignment="Left" Margin="250,235,0,0" VerticalAlignment="Top" />
+        <TextBlock x:Name="lblMessageGeslacht" Margin="515,230,0,0" Padding="5" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFBC2B2B" />
+
+        <Label Content="Interesses:" Margin="15,260,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <CheckBox x:Name="chkProgrammeren" Content="programmeren" Margin="185,265,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <CheckBox x:Name="chkNetwerken" Content="netwerken" HorizontalAlignment="Left" Margin="185,290,0,0" VerticalAlignment="Top" />
+        <CheckBox x:Name="chkBusiness" Content="business" HorizontalAlignment="Left" Margin="185,315,0,0" VerticalAlignment="Top" />
+        <TextBlock x:Name="lblMessageInteresses" Margin="515,265,0,0" Padding="5" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFBC2B2B" />
+
+        <TextBlock x:Name="lblAantalFouten" TextAlignment="Right" Height="45" Margin="185,360,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="330" FontStyle="Italic" FontSize="16" Foreground="#FFBC2B2B" />
+        <Button x:Name="btnWissen" Content="WISSEN" HorizontalAlignment="Left" Padding="10,5" Margin="555,365,0,0" VerticalAlignment="Top" Click="BtnWissen_Click" />
+        <Button x:Name="btnSend" Content="REGISTREREN" HorizontalAlignment="Left" Padding="10,5" Margin="670,365,0,0" VerticalAlignment="Top" Click="BtnRegistreren_Click" />
+    </Grid>
+</Window>
+
+

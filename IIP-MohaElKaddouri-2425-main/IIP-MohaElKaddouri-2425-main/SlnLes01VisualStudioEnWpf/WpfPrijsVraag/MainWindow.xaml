@@ -1,0 +1,45 @@
+﻿<Window x:Class="WpfPrijsVraag.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfPrijsVraag"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FFE5CBE9">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="txtTitel" HorizontalAlignment="Left" Margin="120,42,0,0" TextWrapping="Wrap" Text="1. BEANTWOORD DE VRAAG" VerticalAlignment="Top" FontSize="16" Opacity="2" Width="240" FontWeight="Bold" Grid.ColumnSpan="3"/>
+        <Label x:Name="txtVraag1" Content="Hoe heette Odisee vroeger? Duid het juiste antwoord aan." HorizontalAlignment="Left" Margin="120,77,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3"/>
+        <RadioButton x:Name="rbtn1" Content="HUBKaho" HorizontalAlignment="Left" Margin="120,108,0,0" 
+             VerticalAlignment="Top" Grid.ColumnSpan="3" Checked="Rbtn_Checked"/>
+
+        <RadioButton x:Name="rbtn2" Content="Kaho St Lieven" HorizontalAlignment="Left" Margin="120,128,0,0" 
+             VerticalAlignment="Top" Grid.ColumnSpan="3" Checked="Rbtn_Checked"/>
+
+        <RadioButton x:Name="rbtn3" Content="KiHo" HorizontalAlignment="Left" Margin="120,148,0,0" 
+             VerticalAlignment="Top" Grid.ColumnSpan="3" Checked="Rbtn_Checked"/>
+
+        <RadioButton x:Name="rbtn4" Content="alle bovenstaande" HorizontalAlignment="Left" Margin="120,168,0,0" 
+             VerticalAlignment="Top" Grid.ColumnSpan="3" Checked="Rbtn_Checked"/>
+
+        <TextBlock x:Name="txtJuist" Visibility="Collapsed" HorizontalAlignment="Left" Margin="120,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="3"><Run Language="fr-fr" Text="JUIST! kies nu je prijs..."/><LineBreak/><Run Language="fr-fr"/></TextBlock>
+        <TextBlock x:Name="txtFout" Visibility="Collapsed" HorizontalAlignment="Left" Margin="120,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="3"><Run Language="fr-fr" Text="FOUT! probeer opnieuw"/><LineBreak/><Run Language="fr-fr"/></TextBlock>
+        <TextBlock x:Name="txtVraag2" HorizontalAlignment="Left" Margin="120,228,0,0" TextWrapping="Wrap" Text="2. KIES JE PRIJS" VerticalAlignment="Top" FontSize="16" Opacity="2" Width="240" FontWeight="Bold" Grid.ColumnSpan="3"/>
+        <RadioButton x:Name="rbtnP1" Checked="RbtnP_Checked" Content="prijs 1" HorizontalAlignment="Left" Margin="120,254,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3"/>
+        <RadioButton x:Name="rbtnP2" Checked="RbtnP_Checked" Content="prijs 2" HorizontalAlignment="Left" Margin="120,274,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3"/>
+        <RadioButton x:Name="rbtnP3" Checked="RbtnP_Checked" Content="prijs 3" HorizontalAlignment="Left" Margin="120,294,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3"/>
+        <Image x:Name="imgCadeau" Source="img/kado.jpg" Margin="528,208,129,79" Opacity="0.5" Grid.ColumnSpan="3"/>
+        <Image x:Name="imgSlijp" Source="img/slijpschijf.jpg" Margin="528,208,129,79" Visibility="Collapsed" Grid.ColumnSpan="3"/>
+        <Image x:Name="imgStoon" Source="img/stoomreiniger.jpg" Margin="528,208,129,79" Visibility="Collapsed" Grid.ColumnSpan="3"/>
+        <Image x:Name="imgTand" Source="img/tandenborstel.jpg" Margin="528,208,129,79" Visibility="Collapsed" Grid.ColumnSpan="3"/>
+        <TextBlock x:Name="txtSlijp" Grid.ColumnSpan="3" Visibility="Collapsed" HorizontalAlignment="Left" Height="32" Margin="120,358,0,0" TextWrapping="Wrap" Text="Uitstekende keuze! Dankzij deze hoogwaardige slijpschijf kan u eindelijk die lelijke schouwmantel uitbreken." VerticalAlignment="Top" Width="458"/>
+        <TextBlock x:Name="txtStoon" Grid.ColumnSpan="3" Visibility="Collapsed" HorizontalAlignment="Left" Height="32" Margin="120,358,0,0" TextWrapping="Wrap" Text="Prima gekozen! Met deze stoomreiniger krijgt ongedierte geen kans meer tussen houten planken en hoeken in huis." VerticalAlignment="Top" Width="458"/>
+        <TextBlock x:Name="txtTand" Grid.ColumnSpan="3" Visibility="Collapsed" HorizontalAlignment="Left" Height="32" Margin="120,358,0,0" TextWrapping="Wrap" Text="Mooie keuze! Dankzij deze tandenborstel met actieve borstelrotaties in zes programma's ruikt uw adem frisser dan ooit." VerticalAlignment="Top" Width="458"/>
+        
+
+    </Grid>
+</Window>

@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfNamenFilter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfNamenFilter"
+        mc:Ignorable="d"
+        Title="WpfNamenFilter" Height="450" Width="800" Background="DarkOrange">
+    <Grid>
+        <Label Content="Zoeken: " FontSize="18" HorizontalAlignment="Left" Margin="70,23,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="inpZoeken" HorizontalAlignment="Left" Margin="181,31,0,0" TextWrapping="Wrap" Text="" FontSize="18" VerticalAlignment="Top" Width="120" TextChanged="InpZoeken_TextChanged"/>
+        <Label Content="Namen: " FontSize="18" HorizontalAlignment="Left" Margin="128,83,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lstNamen" Margin="181,122,374,139">
+            <ListBoxItem Content="Ada Lovelace"/>
+            <ListBoxItem Content="Alan Turing"/>
+            <ListBoxItem Content="Anders Hejlsberg"/>
+            <ListBoxItem Content="Bjarne Soustrup"/>
+            <ListBoxItem Content="Charles Babbage"/>
+            <ListBoxItem Content="Edsger Dijkstra"/>
+            <ListBoxItem Content="Grace Hopper"/>
+            <ListBoxItem Content="Guido Van Rossum"/>
+            <ListBoxItem Content="John McCarthy"/>
+            <ListBoxItem Content="Kurt Godel"/>
+            <ListBoxItem Content="Linus Torvalds"/>
+        </ListBox>
+        <Label Content="Aantal matches: " FontSize="18" HorizontalAlignment="Left" Margin="89,331,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txtMatches" HorizontalAlignment="Left" FontSize="18" Margin="235,336,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="83" Height="62"/>
+
+
+    </Grid>
+</Window>

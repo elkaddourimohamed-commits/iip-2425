@@ -1,0 +1,15 @@
+﻿<Window x:Class="WpfSliderKleur.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfSliderKleur"
+        mc:Ignorable="d"
+        Title="WpfSliderKleur" Height="450" Width="800">
+    <Grid>
+        <Slider x:Name="sldKleur" Minimum="0" Maximum="100" HorizontalAlignment="Left" Margin="185,151,0,0" VerticalAlignment="Top" Width="462" Height="49" ValueChanged="SldKleur_ValueChanged"/>
+        <TextBlock x:Name="txtSelect" HorizontalAlignment="Left" Height="47" Margin="198,294,0,0" TextWrapping="Wrap" Text="Geselecteerde waarde: " VerticalAlignment="Top" Width="202" FontSize="18"/>
+        <TextBlock x:Name="txtCijfer" HorizontalAlignment="Left" Height="47" Margin="451,294,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="168" FontSize="24" FontWeight="Bold"/>
+
+    </Grid>
+</Window>

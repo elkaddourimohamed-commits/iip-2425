@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfIngredienten.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfIngredienten"
+        mc:Ignorable="d"
+        Title="WpfIngredienten" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="90,39,0,0" TextWrapping="Wrap" Text="Ingredienten" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
+        <Label Content="Aantal personen:" HorizontalAlignment="Left" Margin="95,74,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtAantalpersonen" HorizontalAlignment="Left" Margin="222,78,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="90,116,0,0" TextWrapping="Wrap" Text="Ingredienten (per persoon): " VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="95,163,0,0" TextWrapping="Wrap" Text="Hoeveelheid" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="213,163,0,0" TextWrapping="Wrap" Text="Eenheid" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="306,159,0,0" TextWrapping="Wrap" Text="Ingredient" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="txtEenheid1" HorizontalAlignment="Left" Margin="196,201,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="60" Height="29"/>
+        <TextBox x:Name="txtIngredient1" HorizontalAlignment="Left" Margin="293,201,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176" Height="16"/>
+        <TextBox x:Name="txtHvl1" HorizontalAlignment="Left" Margin="105,200,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="57" Height="30"/>
+        <TextBox x:Name="txtHvl2" HorizontalAlignment="Left" Margin="106,246,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="60" Height="27"/>
+        <TextBox x:Name="txtEenheid2" HorizontalAlignment="Left" Margin="196,246,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="60" Height="27"/>
+        <TextBox x:Name="txtIngredient2" HorizontalAlignment="Left" Margin="293,246,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176" Height="16"/>
+        <TextBox x:Name="txtHvl3" HorizontalAlignment="Left" Margin="106,294,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="60" Height="28"/>
+        <TextBox x:Name="txtEenheid3" HorizontalAlignment="Left" Margin="196,294,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="60" Height="28"/>
+        <TextBox x:Name="txtIngredient3" HorizontalAlignment="Left" Margin="293,294,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176" Height="16"/>
+        <TextBox x:Name="txtHvl4" HorizontalAlignment="Left" Margin="106,340,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="60" Height="27"/>
+        <TextBox x:Name="txtEenheid4" HorizontalAlignment="Left" Margin="196,340,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="60" Height="27"/>
+        <TextBox x:Name="txtIngredient4" HorizontalAlignment="Left" Margin="293,340,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176" Height="16"/>
+        <Button Content="MAAK BOODSCHAPPENLIJST" HorizontalAlignment="Left" Margin="293,372,0,0" VerticalAlignment="Top" Height="34" Width="165" Click="BtnBoodschap_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="565,168,0,0" TextWrapping="Wrap" Text="Boodschappenlijst" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <TextBlock x:Name="txtFinal" HorizontalAlignment="Left" Height="158" Margin="554,209,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="172"/>
+
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,34 @@
+﻿<Window x:Class="WpfMusicPlayer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfMusicPlayer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label HorizontalAlignment="Left" Margin="68,18,0,0" Content="Speelt nu af: " VerticalAlignment="Top" Height="38" Width="102" FontSize="16px"/>
+        <TextBlock x:Name="txtMuziek" HorizontalAlignment="Left" Margin="196,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="38" Width="112" FontSize="16px" RenderTransformOrigin="0.498,-0.557"/>
+        <Label  HorizontalAlignment="Left" Margin="90,61,0,0" Content="Volume: " VerticalAlignment="Top" Height="38" Width="80" FontSize="16px"/>
+        <TextBlock x:Name="txtVolume" HorizontalAlignment="Left" Margin="196,71,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="38" Width="112" FontSize="16px"/>
+        <Slider x:Name="sldVolume" HorizontalAlignment="Left" Minimum="0" Maximum="100" Margin="231,280,0,0" VerticalAlignment="Top" Width="204" ValueChanged="SldVolume_ValueChanged"/>
+        <Label HorizontalAlignment="Left" Margin="266,114,0,0" Content="Mijn afspeellijst: " VerticalAlignment="Top" Height="38" Width="134" FontSize="16px" RenderTransformOrigin="0.661,-0.309"/>
+        <ListBox x:Name="lstMuziek" Margin="231,157,365,173" MouseDoubleClick="LstMuziek_MouseDoubleClick">>
+            <ListBoxItem Content="Mohammed Abdu - Habibi" Tag="music/habibi.mp3"/>
+            <ListBoxItem Content="Anouar Brahem - Raf-raf" Tag="music/raf-raf.mp3"/>
+            <ListBoxItem Content="Anouar Brahem - Ronda" Tag="music/ronda.mp3"/>
+            <ListBoxItem Content="Baaba Maal - Samba" Tag="music/samba.mp3"/>
+            <ListBoxItem Content="Baaba Maal - Yero-mama" Tag="music/yero-mama.mp3"/>
+        </ListBox>
+        <Label HorizontalAlignment="Left" Margin="90,310,0,0" Content="Thema: " VerticalAlignment="Top" Height="38" Width="80" FontSize="16px"/>
+        <ListBox x:Name="lstThema" Margin="231,310,365,20" SelectionChanged="LstThema_SelectionChanged">
+            <ListBoxItem x:Name="lstStandaard" Content="Standaard"/>
+            <ListBoxItem x:Name="lstGeel" Content="Geel"/>
+            <ListBoxItem x:Name="lstBlauw" Content="Blauw"/>
+            <ListBoxItem x:Name="lstRood" Content="Rood"/>
+            <ListBoxItem x:Name="lstGroen" Content="Groen"/>
+        </ListBox>
+
+
+    </Grid>
+</Window>

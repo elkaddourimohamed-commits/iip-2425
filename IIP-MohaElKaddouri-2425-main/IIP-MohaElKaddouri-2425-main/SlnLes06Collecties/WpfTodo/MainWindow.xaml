@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfTodo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTodo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label FontSize="18" Content="Taak: " HorizontalAlignment="Left" Margin="111,38,0,0" VerticalAlignment="Top" Height="50" Width="58"/>
+        <Label FontSize="18" Content="Prioriteit: " HorizontalAlignment="Left" Margin="111,108,0,0" VerticalAlignment="Top" Height="50" Width="85"/>
+        <TextBox x:Name="txtTaak" FontSize="18" HorizontalAlignment="Left" Margin="195,38,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="229" Height="38"/>
+        <ComboBox x:Name="cmbPrioriteit" HorizontalAlignment="Left" Margin="214,116,0,0" VerticalAlignment="Top" Width="210">
+            <ComboBoxItem Content="laag"></ComboBoxItem>
+            <ComboBoxItem Content="gemiddeld"></ComboBoxItem>
+            <ComboBoxItem Content="hoog"></ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="btnToevoegen" Click="BtnToevoegen_Click" FontSize="16" Content="TOEVOEGEN" HorizontalAlignment="Left" Margin="320,171,0,0" VerticalAlignment="Top" Height="36" Width="104"/>
+        <ListBox FontSize="18" x:Name="lstTaak" Margin="444,38,10,179" FontWeight="Bold"/>
+        <Button Click="BtnTerugzetten_Click" x:Name="btnTerugzetten" FontSize="16" Content="TERUGZETTEN" HorizontalAlignment="Left" Margin="444,289,0,0" VerticalAlignment="Top" Height="36" Width="109"/>
+        <Button Click="BtnVerwijderen_Click" x:Name="btnVerwijderen" FontSize="16" Content="VERWIJDEREN" HorizontalAlignment="Left" Margin="617,289,0,0" VerticalAlignment="Top" Height="36" Width="104"/>
+
+    </Grid>
+</Window>

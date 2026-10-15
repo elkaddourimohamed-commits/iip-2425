@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35201.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleJokerPlus", "ConsoleJokerPlus\ConsoleJokerPlus.csproj", "{A011B5BE-C0A4-4387-ABEF-FA1EEFB42672}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAntilopeFietsen", "WpfAntilopeFietsen\WpfAntilopeFietsen.csproj", "{24D28B3D-0207-4BDA-9B39-598B57C04ED9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A011B5BE-C0A4-4387-ABEF-FA1EEFB42672}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A011B5BE-C0A4-4387-ABEF-FA1EEFB42672}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A011B5BE-C0A4-4387-ABEF-FA1EEFB42672}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A011B5BE-C0A4-4387-ABEF-FA1EEFB42672}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24D28B3D-0207-4BDA-9B39-598B57C04ED9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24D28B3D-0207-4BDA-9B39-598B57C04ED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24D28B3D-0207-4BDA-9B39-598B57C04ED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24D28B3D-0207-4BDA-9B39-598B57C04ED9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B7F94484-991C-4530-8FF5-FDC4BF78A27D}
+	EndGlobalSection
+EndGlobal

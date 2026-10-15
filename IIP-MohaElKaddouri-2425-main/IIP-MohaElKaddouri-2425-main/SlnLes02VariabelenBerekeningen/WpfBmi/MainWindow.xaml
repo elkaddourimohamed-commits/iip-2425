@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfBmi.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBmi"
+        mc:Ignorable="d"
+        Title="WpfBMI" Height="450" Width="800">
+    <Grid>
+        <TextBlock x:Name="txtBmi" HorizontalAlignment="Left" Height="68" Margin="317,79,0,0" TextWrapping="Wrap" Text="BMI Calculator" VerticalAlignment="Top" Width="194" FontWeight="Bold" FontSize="20"/>
+        <Label x:Name="lblLengte" Content="Lengte:" HorizontalAlignment="Left" Height="28" Margin="219,189,0,0" VerticalAlignment="Top" Width="52"/>
+        <TextBox x:Name="inpLengte" HorizontalAlignment="Left" Height="22" Margin="285,192,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="98"/>
+        <TextBlock x:Name="txtCm" HorizontalAlignment="Left" Height="22" Margin="400,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="61"><Run Language="fr-fr" Text="cm"/><LineBreak/><Run Language="fr-fr"/></TextBlock>
+        <Label x:Name="lblGewicht" Content="Gewicht: " HorizontalAlignment="Left" Height="28" Margin="219,238,0,0" VerticalAlignment="Top" Width="64"/>
+        <TextBox x:Name="inpGewicht" HorizontalAlignment="Left" Height="22" Margin="285,238,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="98"/>
+        <TextBlock x:Name="txtKg" HorizontalAlignment="Left" Height="22" Margin="400,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="61"><Run Language="fr-fr" Text="kg"/><LineBreak/><Run Language="fr-fr"/></TextBlock>
+        <Button x:Name="btnBereken" Content="BEREKENEN" HorizontalAlignment="Left" Height="29" Margin="283,292,0,0" VerticalAlignment="Top" Width="117" FontWeight="Bold" Click="BtnBereken_Click"/>
+        <TextBlock x:Name="txtFinal" HorizontalAlignment="Left" Height="26" Margin="219,359,0,0" TextWrapping="Wrap" Text="BMI: " VerticalAlignment="Top" Width="64"/>
+        <TextBlock x:Name="txtAntwoord" HorizontalAlignment="Left" Margin="269,359,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="26" Width="84"/>
+
+    </Grid>
+</Window>
